@@ -2,18 +2,7 @@ Feature:
 	#COMO usuario
 	#QUIERO visualizar el tablero
 	#PARA poder ver la area de batalla
-Scenario:
-	Given quiero comienza la batalla
-	Then debo ver "Bievenido a la batalla"
-	
-Scenario:
-	Given quiero comienza la batalla
-	Then debo ver "OOOOO" 
 
-	Scenario:
-	Given quiero comienza la batalla
-	And ningun barco colocado
-	Then debo ver "OOOOO" 
 
 
 # ningun barco colocado debe mostrar OOOOOO
