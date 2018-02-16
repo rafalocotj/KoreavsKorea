@@ -16,5 +16,8 @@ post '/batalla' do
 
 	session["tablero"] = Tablero.new 
 	session["tablero"] = session["tablero"].colocar_barco(session["barco"])
+
+	session["tablero2"] = Tablero.new 
+	session["tablero2"] = session["tablero2"].colocar_barco(session["barco"])
 	erb :batalla
 end	
