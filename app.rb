@@ -13,21 +13,11 @@ end
 post '/batalla' do
 	session["barco"] = "#{params['PX']}#{params['PY']}"
 	puts "#{params['PX']}#{params['PY']}"
+
+	session["tablero"] = Tablero.new 
+	session["tablero"] = session["tablero"].colocar_barco(session["barco"])
+
+	session["tablero2"] = Tablero.new 
+	session["tablero2"] = session["tablero2"].colocar_barco(session["barco"])
 	erb :batalla
 end	
-
-barco = "OO"
-
-get '/batalla' do
-
-	session["tablero"] =["OOOOO","OOOSO","OOOOO","OOOOO","OOOOO"]
-	session["tablero2"] =["OOOOO","OOOOO","OOOOO","OOOOO","OOOOO"]
-	
-	if barco == "OO"
-		session["barco"] = "OOOOO"
-	else
-		session["barco"] = barco	
-	end
-
-	erb :batalla
-end
