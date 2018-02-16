@@ -23,6 +23,13 @@
 		<%=session["tablero2"][3] %><br>
 		<%=session["tablero2"][4] %><br>
 	</div>	
-
+<form method="post" action="/atacar">
+ <h3>Coordenada X</h3>
+ 	<input type="text" name="PX">
+ 	<h3>Coordenada Y</h3>
+ 	<input type="text" name="PY">
+ 	<br>
+ 	<button type="submit" value="Posicionar">Lanzar Ataque</button>
+ </form>
 </body>
 </html>

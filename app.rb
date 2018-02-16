@@ -21,3 +21,7 @@ post '/batalla' do
 	session["tablero2"] = session["tablero2"].colocar_barco(session["barco"])
 	erb :batalla
 end	
+
+post '/atacar' do
+ session["ataque"] = "#{params['PX']}#{params['PY']}"
+end
