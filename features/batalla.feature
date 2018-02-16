@@ -39,3 +39,9 @@ Feature:
 		And visualizar pantalla de batalla
 		And debo ver "OOOSO"
 	
+	Scenario:Debo poder ingresar las coordenadas del Barco 
+		Given que abri el juego
+		And se oprimio el boton "Iniciar"
+		And visualizar pantalla de batalla
+		And debo ver "Mi tablero"
+		And debo ver "Rival"
