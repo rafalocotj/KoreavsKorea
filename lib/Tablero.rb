@@ -1,7 +1,5 @@
 class Tablero
 
-
-
 	def initialize()
 		@tablero =['00000','00000','00000','00000','00000']
 		@posiciones

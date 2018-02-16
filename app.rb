@@ -20,6 +20,8 @@ barco = "OO"
 
 get '/batalla' do
 
+	session["tablero"] =["OOOOO","OOOSO","OOOOO","OOOOO","OOOOO"]
+
 	if barco == "OO"
 		session["barco"] = "OOOOO"
 	else
