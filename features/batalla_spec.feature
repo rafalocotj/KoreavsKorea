@@ -15,11 +15,6 @@ Scenario:
 	And ningun barco colocado
 	Then debo ver "OOOOO" 
 
-	Scenario:
-	Given quiero comienza la batalla
-	And un barco colocado en "12"
-	Then debo ver "OSOOOO" 
-	
 
 # ningun barco colocado debe mostrar OOOOOO
 # un barco colocado en (1,2) deber mostrar OSOOOO
