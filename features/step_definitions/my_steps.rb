@@ -34,3 +34,7 @@ end
 When(/^posiciono mi Barco$/) do
   visit '/batalla'
 end
+
+When(/^visualizar pantalla de batalla$/) do
+  visit '/batalla'
+end

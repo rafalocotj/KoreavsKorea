@@ -1,6 +1,6 @@
 class Tablero
 
-	@tablero =["OOOOO","OOOOO","OOOOO","OOOOO","OOOOO"]
+	@tablero =["OSOOO","OOOOO","OOOOO","OOOOO","OOOOO"]
 
 	def colocar_barco(barco = "12")
 	 
